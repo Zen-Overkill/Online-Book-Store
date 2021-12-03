@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <link rel="stylesheet" href="css/loginStyle.css">
+    </head>
+    <body>
+        <div class="login-form-container">
+            <form action="MainController" method="POST">
+                <h3>sign in</h3>
+                <span>username</span>
+                <input type="text" name="userID" class="box" placeholder="enter your username" >
+                <span>password</span>
+                <input type="password" name="password" class="box" placeholder="enter your password">
+                <input type="submit" name="action" value="Login" class="btn">
+                <!--<input type="reset" value="Reset" class="btn">-->
+                <p>don't have an account ? <a href="createUser.jsp">create one</a></p>
+            </form>
+        </div>
+    </body>
+</html>
