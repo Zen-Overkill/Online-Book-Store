@@ -23,7 +23,7 @@ import user.UserDTO;
  */
 public class LoginController extends HttpServlet {
     private static final String ERROR = "error.jsp";
-    private static final String ADMIN_PAGE = "admin.jsp";
+    private static final String ADMIN_PAGE = "SearchUserController";
     private static final String USER_PAGE = "SearchBookController";
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

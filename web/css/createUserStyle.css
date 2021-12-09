@@ -155,3 +155,10 @@ section{
     color:var(--black);
     cursor: pointer;
 }
+
+select{
+    margin-top: 1rem;
+    border: 2px solid var(--green);
+    border-radius: 8px;
+    height: 3rem;
+}

@@ -33,7 +33,7 @@ public class SearchBookController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         String url = "";
         try {
-            String searchBook = request.getParameter("searchBook");
+            String searchBook = request.getParameter("search_book");
             if (searchBook == null) {
                 searchBook = "";
             }

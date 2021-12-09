@@ -261,7 +261,7 @@
             <div class="content">
                 <h3>deal of the day</h3>
                 <h1>upto 50% off</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde perspiciatis in atque dolore tempora quaerat at fuga dolorum natus velit.</p>
+                <p>The instant New York Times bestseller from Chris Cleave—the unforgettable novel about three lives entangled during World War II, told “with dazzling prose, sharp English wit, and compassion…a powerful portrait of war’s effects on those who fight and those left behind”.</p>
                 <a href="#" class="btn">shop now</a>
             </div>
 

@@ -4,6 +4,7 @@
     Author     : ASUS
 --%>
 
+<%@page import="user.UserDTO"%>
 <%@page import="user.UserError"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,6 +20,12 @@
     </head>
     <body>
         <%
+            UserDTO loginUser = (UserDTO) session.getAttribute("LOGIN_USER");
+            if (loginUser == null || !"AD".equals(loginUser.getRoleID())) {
+                response.sendRedirect("login.html");
+                return;
+            }
+            
             UserError userError = (UserError) request.getAttribute("USER_ERROR");
             if (userError == null) {
                 userError = new UserError();
@@ -45,7 +52,7 @@
                 <input type="password" name="address" class="box" placeholder="enter your address">
                 <button type="submit" value="createUser" name="action" class="btn">Create account</button>
                 <!--<input type="reset" value="Reset" class="btn">-->
-                <a class="btn" href="login.html">Back</a>
+                <a class="btn" href="SearchUserController">Back</a>
                 <%= userError.getMessageError()%>
             </form>
             
